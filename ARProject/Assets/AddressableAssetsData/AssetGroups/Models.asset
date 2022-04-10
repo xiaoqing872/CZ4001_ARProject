@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Models
+  m_EditorClassIdentifier: 
+  m_GroupName: Models
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ad503cb880e29ec40b477407e5d4bec1
+  m_SerializeEntries:
+  - m_GUID: af528ee80b43ca941a412750b4ae8a0d
+    m_Address: Assets/AddressableAssets/Items/Flower.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - OptionItems
+  - m_GUID: 0eb16fb871103a4449ba761f516d7c22
+    m_Address: Assets/AddressableAssets/Items/Plant.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - OptionItems
+  - m_GUID: c4e06bb029ca799419a6e9646f162195
+    m_Address: Assets/AddressableAssets/Items/Tree.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - OptionItems
+  - m_GUID: 2eda4b6579150374f8847dc16d3548e4
+    m_Address: Assets/AddressableAssets/Items/Light.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - OptionItems
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 19a21001b2ed4284eb1f8fe232a4ef76, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 96e7d439fdfe82c4f87ddf20e0dabac2, type: 2}
+    - {fileID: 11400000, guid: 86ee760461c5aa643b47138bbe145831, type: 2}
