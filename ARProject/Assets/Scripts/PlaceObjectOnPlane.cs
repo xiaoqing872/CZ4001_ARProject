@@ -8,7 +8,7 @@ public class PlaceObjectOnPlane : MonoBehaviour
 {
     [SerializeField]
     GameObject placedPrefab;
-    GameObject spawnedObject;
+    public GameObject spawnedObject;
     ARRaycastManager raycaster;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     private void Start()
