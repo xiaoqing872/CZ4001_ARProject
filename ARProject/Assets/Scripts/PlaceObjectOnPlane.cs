@@ -15,6 +15,20 @@ public class PlaceObjectOnPlane : MonoBehaviour
     {
         raycaster = GetComponent<ARRaycastManager>();
     }
+    ARAnchor CreateAnchor(in ARRaycastHit hit)
+    {
+        // create a regular anchor at the hit pose
+        ARAnchor anchor;
+        spawnedObject = Instantiate(placedPrefab, hit.pose.position, hit.pose.rotation);
+        anchor = spawnedObject.GetComponent<ARAnchor>();
+        if (anchor == null)
+        {
+            anchor = spawnedObject.AddComponent<ARAnchor>();
+        }
+
+        return anchor;
+    }
+
     void OnPlaceObject(InputValue value)
     {
         Vector2 touchPosition = value.Get<Vector2>();
@@ -26,8 +40,8 @@ public class PlaceObjectOnPlane : MonoBehaviour
             if (spawnedObject == null)
             {
                 //instantiate the prefab at the hit position and rotation
-                //spawnedObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
-                spawnedObject = Instantiate(placedPrefab, hitPose.position, Quaternion.Inverse(hitPose.rotation));
+                //spawnedObject = Instantiate(placedPrefab, hitPose.position, Quaternion.Inverse(hitPose.rotation));
+                CreateAnchor(hits[0]);
             }
             //else
             else
